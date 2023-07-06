@@ -1,0 +1,76 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "sonic ce ai patit?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "sunt panicat"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "eu nu mai sunt sonic, eu sunt virusul intunecat al acestuia!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "sonic.exe mi se spune"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "acum e timpul sa te virusez si pe tine"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "pentru a te distruge, trebuie sa te fortez la maxim"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "si am vazut ceea ce ai facut cu sonic"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "cum adica, sa fac rap battle cu tine?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "da asa este\\ndaca incerci sa scapi vei fi virusat, asa ca infrunta-ma!!!!"
+		}
+	]
+}

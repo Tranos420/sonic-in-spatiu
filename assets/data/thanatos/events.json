@@ -1,0 +1,76 @@
+{
+	"song": {
+		"events": [
+			[
+				4465.11627906977,
+				[
+					[
+						"Play Animation",
+						"laugh",
+						"sonic.exe"
+					]
+				]
+			],
+			[
+				4883.72093023256,
+				[
+					[
+						"Play Animation",
+						"laugh",
+						"sonic.exe"
+					]
+				]
+			],
+			[
+				5162.79069767442,
+				[
+					[
+						"Play Animation",
+						"laugh",
+						"sonic.exe"
+					]
+				]
+			],
+			[
+				75000,
+				[
+					[
+						"Play Animation",
+						"laugh",
+						"sonic.exe"
+					]
+				]
+			],
+			[
+				75139.5348837209,
+				[
+					[
+						"Play Animation",
+						"laugh",
+						"sonic.exe"
+					]
+				]
+			],
+			[
+				75418.6046511628,
+				[
+					[
+						"Play Animation",
+						"laugh",
+						"sonic.exe"
+					]
+				]
+			],
+			[
+				87069.7674418604,
+				[
+					[
+						"Play Animation",
+						"i am god",
+						"sonic.exe"
+					]
+				]
+			]
+		]
+	}
+}

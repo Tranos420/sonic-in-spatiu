@@ -1,0 +1,44 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "pissed",
+			"text": "aha te-am invins, floare la ureche"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "acum da-mi fisierele secrete"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "tu nu ai castigat..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "eu am castigat!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonic",
+			"boxState": "angry",
+			"expression": "talk",
+			"text": "intotdeauna eu castig!"
+		}
+	]
+}

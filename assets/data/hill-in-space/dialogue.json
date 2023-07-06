@@ -1,0 +1,116 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonicnormal",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "hai salut camarade."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonicnormal",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "numele meu este sonic ariciul. ce cauti tu aici?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "salut sonic."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "trebuie sa gasesc niste fisiere video pentru un prieten."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonicnormal",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "interesant...\\ncum il chama pe prietenul tau si ce fisiere mai exact?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "il cheama tranulea andrei gabriel\\nacesta si-a pierdut fisierele de la un video important"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "acesta s-a inscris la concursul infoeducatie si are nevoie urgent de ajutor."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "trebuie sa gaseasca fisierele video pentru proba multimedia."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "si de asta sunt aici."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonicnormal",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "foarte frumos, vrei sa te ajut si eu?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "da desigur."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonicnormal",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "mai intai trebuie sa facem un exercitiu de viteza"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "stiu exact la ce te gandesti\\nrap battle?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "sonicnormal",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "adevarat, hai sa incepem!!!"
+		}
+	]
+}
