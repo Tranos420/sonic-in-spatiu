@@ -38,7 +38,7 @@ class MainMenuState extends MusicBeatState
 		'freeplay', // 1
 		//#if MODS_ALLOWED 'mods', #end 
 		//#if ACHIEVEMENTS_ALLOWED 'awards', #end 
-		//'credits', // 3
+		//'credits', // 5
 		#if !switch 'donate', #end // 4
 		'options' // 2
 	];
@@ -130,22 +130,25 @@ class MainMenuState extends MusicBeatState
 			switch (i)
 			{
 					case 0: 
-						menuItem.y = 34.95;
-						menuItem.x = 209.4;
+						menuItem.y = 10;
+						menuItem.x = 200;
 
 					case 1: 
-						menuItem.y = 149.5;
-						menuItem.x = 389.8;
+						menuItem.y = 50;
+						menuItem.x = 400;
 
 					case 2:
-						menuItem.y = 294.95;
-						menuItem.x = 516.5;
+						menuItem.y = 90;
+						menuItem.x = 520;
 					case 3:
-						menuItem.y = 462.9;
-						menuItem.x = 634.75;
+						menuItem.y = 130;
+						menuItem.x = 650;
 					case 4:
-						menuItem.y = 552.55;
-						menuItem.x = 720.2;
+						menuItem.y = 170;
+						menuItem.x = 700;
+					case 5:
+						menuItem.y = 220;
+						menuItem.y = 850;
 			}
 			if(FlxG.save.data.antialiasing)
 				{
