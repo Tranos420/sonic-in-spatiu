@@ -1,0 +1,302 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 268435456 bytes for Failed to commit area from 0x00000000f0000000 to 0x0000000100000000 of length 268435456.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (./open/src/hotspot/os/windows/os_windows.cpp:3287), pid=69072, tid=67096
+#
+# JRE version:  (11.0.15.1+2) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (11.0.15.1+2-LTS-10, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Djava.library.path=F:\Virusi\Adobe Animate 2023\jre\bin -Djava.Home=F:\Virusi\Adobe Animate 2023\jre -Xbootclasspath/a: -DformatMsgNoLookups=true -Djava.awt.headless=true -Xmx256m 
+
+Host: AMD Ryzen 7 3700X 8-Core Processor             , 16 cores, 31G,  Windows 10 , 64 bit Build 19041 (10.0.19041.3155)
+Time: Tue Jul 18 21:19:43 2023 GTB Daylight Time elapsed time: 0.251934 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000002d1a2000):  JavaThread "Unknown thread" [_thread_in_vm, id=67096, stack(0x0000000000050000,0x0000000000150000)]
+
+Stack: [0x0000000000050000,0x0000000000150000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  0x00007ffd3a2d9d8a
+C  0x00007ffd3a4138ff
+C  0x00007ffd3a414fa9
+C  0x00007ffd3a415633
+C  0x00007ffd39eed9c8
+C  0x00007ffd3a2d70aa
+C  0x00007ffd3a2cbe35
+C  0x00007ffd39fa27dc
+C  0x00007ffd39fa2662
+C  0x00007ffd39fa7386
+C  0x00007ffd39fe9d8f
+C  0x00007ffd39fe97c0
+C  0x00007ffd39f7fdf8
+C  0x00007ffd39f80f66
+C  0x00007ffd3a3edf07
+C  0x00007ffd3a3ef79f
+C  0x00007ffd39ff6ab9
+C  0x00007ffd3a3d3810
+C  0x00007ffd3a0656cf
+C  0x00007ffd3a0677e1
+C  [Animate.exe+0x105bb42]
+C  [Animate.exe+0x779f41]
+C  [Animate.exe+0x821942]
+C  [Animate.exe+0x8284a2]
+C  [Animate.exe+0x385b48]
+C  [Animate.exe+0x467a33]
+C  [Animate.exe+0x4f4d99]
+C  [Animate.exe+0x4b3db4]
+C  [Animate.exe+0x41c62c]
+C  [Animate.exe+0x46b9f2]
+C  [Animate.exe+0x46a76c]
+C  [Animate.exe+0x469dca]
+C  [Animate.exe+0x451459]
+C  [Animate.exe+0x46cc29]
+C  [Animate.exe+0x4bf15d]
+C  [Animate.exe+0x1dc3ae2]
+C  [KERNEL32.DLL+0x17614]
+C  [ntdll.dll+0x526b1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000000003c4079d0, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000000003c4d8800 GCTaskThread "GC Thread#0" [stack: 0x0000000044230000,0x0000000044330000] [id=75840]
+  0x000000004bcbf800 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000000063a80000,0x0000000063b80000] [id=75844]
+  0x000000004bcc0000 ConcurrentGCThread "G1 Conc#0" [stack: 0x0000000063b80000,0x0000000063c80000] [id=75848]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffd39f8f087]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000000003c8c6ea0] Heap_lock - owner thread: 0x000000002d1a2000
+
+Heap address: 0x00000000f0000000, size: 256 MB, Compressed Oops mode: Non-zero based: 0x00000000f0000000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x0000000140000000 - 0x0000000143fc5000 	F:\Virusi\Adobe Animate 2023\Animate.exe
+0x00007ffde3a30000 - 0x00007ffde3c28000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffde2500000 - 0x00007ffde25bf000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffde15c0000 - 0x00007ffde18b6000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffda26c0000 - 0x00007ffda278f000 	C:\Program Files\Bitdefender\Bitdefender Security\bdhkm\dlls_266184808945032704\bdhkm64.dll
+0x00007ffda2560000 - 0x00007ffda26bb000 	C:\Program Files\Bitdefender\Bitdefender Security\atcuf\dlls_266670751544461168\atcuf64.dll
+0x00007ffde1360000 - 0x00007ffde14be000 	C:\WINDOWS\System32\CRYPT32.dll
+0x00007ffde14c0000 - 0x00007ffde15c0000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffde18c0000 - 0x00007ffde18e7000 	C:\WINDOWS\System32\bcrypt.dll
+0x00007ffde2740000 - 0x00007ffde2795000 	C:\WINDOWS\System32\SHLWAPI.dll
+0x00007ffde2080000 - 0x00007ffde211e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffde27a0000 - 0x00007ffde280b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffde3060000 - 0x00007ffde3186000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffde1a90000 - 0x00007ffde1c2d000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffde1110000 - 0x00007ffde1132000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffde1c30000 - 0x00007ffde1c5c000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffde1190000 - 0x00007ffde12a5000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffde18f0000 - 0x00007ffde198d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffde1c60000 - 0x00007ffde1d3a000 	C:\WINDOWS\System32\COMDLG32.dll
+0x00007ffde2120000 - 0x00007ffde2474000 	C:\WINDOWS\System32\combase.dll
+0x00007ffde1e70000 - 0x00007ffde1f1d000 	C:\WINDOWS\System32\shcore.dll
+0x00007ffde3190000 - 0x00007ffde38d4000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffde2ce0000 - 0x00007ffde2d8f000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffde1fc0000 - 0x00007ffde205c000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffde1d40000 - 0x00007ffde1e6a000 	C:\WINDOWS\System32\ole32.dll
+0x00007ffde38e0000 - 0x00007ffde39ad000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffdd9820000 - 0x00007ffdd992a000 	C:\WINDOWS\SYSTEM32\WINHTTP.dll
+0x00007ffddb630000 - 0x00007ffddb657000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffddc500000 - 0x00007ffddc50a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffd810b0000 - 0x00007ffd810e8000 	C:\WINDOWS\SYSTEM32\oledlg.dll
+0x00007ffd3b400000 - 0x00007ffd3e7d7000 	F:\Virusi\Adobe Animate 2023\AdobePIE.dll
+0x00007ffde39b0000 - 0x00007ffde39e0000 	C:\WINDOWS\System32\IMM32.dll
+0x00007ffd8d7f0000 - 0x00007ffd8d910000 	F:\Virusi\Adobe Animate 2023\CRClient.dll
+0x00007ffde1990000 - 0x00007ffde19f7000 	C:\WINDOWS\System32\WINTRUST.dll
+0x0000000180000000 - 0x000000018197a000 	F:\Virusi\Adobe Animate 2023\dvaui.dll
+0x0000000001370000 - 0x0000000001590000 	F:\Virusi\Adobe Animate 2023\dvaworkspace.dll
+0x0000000001590000 - 0x0000000001a66000 	F:\Virusi\Adobe Animate 2023\exo.dll
+0x0000000000a70000 - 0x0000000000b05000 	F:\Virusi\Adobe Animate 2023\flashplayercore.dll
+0x0000000000720000 - 0x0000000000735000 	F:\Virusi\Adobe Animate 2023\boost_threads.dll
+0x0000000001a70000 - 0x00000000020ab000 	F:\Virusi\Adobe Animate 2023\dvacore.dll
+0x00007ffde2810000 - 0x00007ffde2c7e000 	C:\WINDOWS\System32\SETUPAPI.dll
+0x00007ffde1140000 - 0x00007ffde118e000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00000000020b0000 - 0x00000000021be000 	F:\Virusi\Adobe Animate 2023\dvanet.dll
+0x00000000021c0000 - 0x0000000002251000 	F:\Virusi\Adobe Animate 2023\utest.dll
+0x0000000000b10000 - 0x0000000000b48000 	F:\Virusi\Adobe Animate 2023\dvatexteditor.dll
+0x0000000002260000 - 0x00000000022d4000 	F:\Virusi\Adobe Animate 2023\FlashIK.dll
+0x00000000022e0000 - 0x0000000002307000 	F:\Virusi\Adobe Animate 2023\PFF.dll
+0x0000000002320000 - 0x000000000265c000 	F:\Virusi\Adobe Animate 2023\dvaadameve.dll
+0x0000000002670000 - 0x0000000002690000 	F:\Virusi\Adobe Animate 2023\boost_filesystem.dll
+0x00000000026a0000 - 0x00000000026f9000 	F:\Virusi\Adobe Animate 2023\boost_program_options.dll
+0x0000000002710000 - 0x00000000027b1000 	F:\Virusi\Adobe Animate 2023\boost_regex.dll
+0x00000000027d0000 - 0x00000000027fd000 	F:\Virusi\Adobe Animate 2023\mfcdata.dll
+0x0000000002810000 - 0x000000000287b000 	F:\Virusi\Adobe Animate 2023\brushparser.dll
+0x0000000002890000 - 0x0000000002a5a000 	F:\Virusi\Adobe Animate 2023\dvaaudiofilters.dll
+0x0000000002a70000 - 0x0000000002b01000 	F:\Virusi\Adobe Animate 2023\dvaaudiofilterhost.dll
+0x0000000002b20000 - 0x0000000002dca000 	F:\Virusi\Adobe Animate 2023\xerces.dll
+0x0000000002de0000 - 0x0000000002de9000 	F:\Virusi\Adobe Animate 2023\metromode.dll
+0x0000000002e00000 - 0x0000000002eb5000 	F:\Virusi\Adobe Animate 2023\GLTFExporterPlugin.dll
+0x0000000002ed0000 - 0x0000000003170000 	F:\Virusi\Adobe Animate 2023\dvaappsupport.dll
+0x0000000003180000 - 0x00000000033f8000 	F:\Virusi\Adobe Animate 2023\dvascripting.dll
+0x0000000003410000 - 0x00000000034b8000 	F:\Virusi\Adobe Animate 2023\dvascriptedworkflow.dll
+0x00000000034d0000 - 0x0000000003609000 	F:\Virusi\Adobe Animate 2023\dvamediatypes.dll
+0x0000000003620000 - 0x0000000003861000 	F:\Virusi\Adobe Animate 2023\dvauxphost.dll
+0x00007ffd8d100000 - 0x00007ffd8d32d000 	F:\Virusi\Adobe Animate 2023\AdobeOwl.dll
+0x00007ffd83bc0000 - 0x00007ffd83f08000 	F:\Virusi\Adobe Animate 2023\ZXPSignLib-minimal.dll
+0x00000000038a0000 - 0x00000000039ff000 	F:\Virusi\Adobe Animate 2023\dvaaudiodevice.dll
+0x0000000003a10000 - 0x0000000003aba000 	F:\Virusi\Adobe Animate 2023\dvaplayer.dll
+0x00007ffd83850000 - 0x00007ffd83bba000 	F:\Virusi\Adobe Animate 2023\VulcanControl.dll
+0x00007ffd919a0000 - 0x00007ffd91a8b000 	F:\Virusi\Adobe Animate 2023\VulcanMessage5.dll
+0x00007ffdaaf70000 - 0x00007ffdaafd5000 	F:\Virusi\Adobe Animate 2023\ahclient.dll
+0x00007ffd8ce40000 - 0x00007ffd8d0f3000 	F:\Virusi\Adobe Animate 2023\LogSession.dll
+0x00007ffd83360000 - 0x00007ffd8384c000 	F:\Virusi\Adobe Animate 2023\PlugPlugOwl.dll
+0x00007ffd53990000 - 0x00007ffd54dab000 	F:\Virusi\Adobe Animate 2023\AILib.dll
+0x00007ffd8af30000 - 0x00007ffd8b065000 	F:\Virusi\Adobe Animate 2023\AdobeXMP.dll
+0x00007ffdb6580000 - 0x00007ffdb65a4000 	F:\Virusi\Adobe Animate 2023\BIB.dll
+0x00007ffdb1db0000 - 0x00007ffdb1ddb000 	F:\Virusi\Adobe Animate 2023\BIBUtils.dll
+0x00007ffd83210000 - 0x00007ffd83351000 	F:\Virusi\Adobe Animate 2023\ACE.dll
+0x00007ffd82df0000 - 0x00007ffd8320c000 	F:\Virusi\Adobe Animate 2023\CoolType.dll
+0x00007ffd7cd90000 - 0x00007ffd7d47e000 	F:\Virusi\Adobe Animate 2023\AGM.dll
+0x00007ffda4790000 - 0x00007ffda47ea000 	F:\Virusi\Adobe Animate 2023\ARE.dll
+0x00007ffd8ae10000 - 0x00007ffd8af22000 	F:\Virusi\Adobe Animate 2023\PDFPort.dll
+0x00007ffd7b7e0000 - 0x00007ffd7bc93000 	F:\Virusi\Adobe Animate 2023\MPS.dll
+0x00007ffd56760000 - 0x00007ffd5714c000 	F:\Virusi\Adobe Animate 2023\AdobePDFL.dll
+0x00007ffd2eec0000 - 0x00007ffd328cf000 	F:\Virusi\Adobe Animate 2023\dynamic-torqnative.dll
+0x00007ffdaf110000 - 0x00007ffdaf143000 	F:\Virusi\Adobe Animate 2023\act_tracing.dll
+0x00007ffd52210000 - 0x00007ffd5398c000 	F:\Virusi\Adobe Animate 2023\libdynamic-napi.dll
+0x00007ffdd9a30000 - 0x00007ffdd9f06000 	C:\WINDOWS\SYSTEM32\WININET.dll
+0x00007ffda4690000 - 0x00007ffda46f6000 	F:\Virusi\Adobe Animate 2023\tbb.dll
+0x00007ffdc41a0000 - 0x00007ffdc443a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffdb5ea0000 - 0x00007ffdb5f2e000 	C:\WINDOWS\SYSTEM32\MSVCP140.dll
+0x00007ffdd9230000 - 0x00007ffdd9237000 	C:\WINDOWS\SYSTEM32\MSVCP140_CODECVT_IDS.dll
+0x00007ffde0530000 - 0x00007ffde056c000 	C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+0x00007ffdda340000 - 0x00007ffdda34c000 	C:\WINDOWS\SYSTEM32\Secur32.dll
+0x00007ffdb5f50000 - 0x00007ffdb5f6b000 	C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll
+0x00007ffdb5f40000 - 0x00007ffdb5f4c000 	C:\WINDOWS\SYSTEM32\VCRUNTIME140_1.dll
+0x00007ffd70490000 - 0x00007ffd705b5000 	C:\WINDOWS\SYSTEM32\OPENGL32.dll
+0x00007ffdd2320000 - 0x00007ffdd24c5000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.2251_none_91a40448cc8846c1\gdiplus.dll
+0x00007ffdd38d0000 - 0x00007ffdd3abc000 	C:\WINDOWS\SYSTEM32\urlmon.dll
+0x0000000003c00000 - 0x0000000003d98000 	F:\Virusi\Adobe Animate 2023\aflamingo.dll
+0x00007ffddf9c0000 - 0x00007ffddfab3000 	C:\WINDOWS\SYSTEM32\dxgi.dll
+0x00007ffdc4f40000 - 0x00007ffdc4f47000 	C:\WINDOWS\SYSTEM32\MSIMG32.dll
+0x00007ffd82bc0000 - 0x00007ffd82de5000 	F:\Virusi\Adobe Animate 2023\icuuc69.dll
+0x00007ffd95c10000 - 0x00007ffd95cb2000 	F:\Virusi\Adobe Animate 2023\JP2KLib.dll
+0x00007ffd94990000 - 0x00007ffd949f4000 	F:\Virusi\Adobe Animate 2023\AdobeSVGAGM.dll
+0x00007ffd90cb0000 - 0x00007ffd90d3a000 	F:\Virusi\Adobe Animate 2023\tbb12.dll
+0x00007ffd7c970000 - 0x00007ffd7cd8f000 	F:\Virusi\Adobe Animate 2023\wrservices.dll
+0x0000000067250000 - 0x000000006727b000 	F:\Virusi\Adobe Animate 2023\AXE8SharedExpat.dll
+0x00007ffd81230000 - 0x00007ffd813c3000 	F:\Virusi\Adobe Animate 2023\AdobeXMPFiles.dll
+0x00007ffdaae20000 - 0x00007ffdaae55000 	F:\Virusi\Adobe Animate 2023\AdobePDFSettings.dll
+0x00007ffdd6cb0000 - 0x00007ffdd6e94000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+0x00007ffddd6e0000 - 0x00007ffdddca0000 	C:\WINDOWS\SYSTEM32\d2d1.dll
+0x00007ffdc4520000 - 0x00007ffdc479f000 	C:\WINDOWS\SYSTEM32\DWrite.dll
+0x00007ffdc4440000 - 0x00007ffdc44a6000 	C:\WINDOWS\SYSTEM32\OLEACC.dll
+0x00007ffddeed0000 - 0x00007ffddeeff000 	C:\WINDOWS\SYSTEM32\dwmapi.dll
+0x0000000003e30000 - 0x0000000003f0c000 	F:\Virusi\Adobe Animate 2023\dvaeve.dll
+0x0000000003f20000 - 0x0000000003f45000 	F:\Virusi\Adobe Animate 2023\libzip.dll
+0x00007ffdd0520000 - 0x00007ffdd053d000 	C:\WINDOWS\SYSTEM32\MPR.dll
+0x00007ffde0840000 - 0x00007ffde08aa000 	C:\WINDOWS\SYSTEM32\MSWSOCK.dll
+0x0000000003f60000 - 0x0000000004046000 	F:\Virusi\Adobe Animate 2023\dvaaccelerate.dll
+0x0000000004060000 - 0x00000000042bb000 	F:\Virusi\Adobe Animate 2023\dvaaudiodsp.dll
+0x00000000042d0000 - 0x00000000042fe000 	F:\Virusi\Adobe Animate 2023\TexturePacker.dll
+0x0000000004310000 - 0x0000000004360000 	F:\Virusi\Adobe Animate 2023\dvavulcansupport.dll
+0x0000000004370000 - 0x0000000004515000 	F:\Virusi\Adobe Animate 2023\dvastorage.dll
+0x00007ffdda580000 - 0x00007ffdda58a000 	C:\WINDOWS\SYSTEM32\AVRT.dll
+0x0000000004530000 - 0x0000000004771000 	F:\Virusi\Adobe Animate 2023\dynamiclink.dll
+0x00007ffde0fc0000 - 0x00007ffde0fee000 	C:\WINDOWS\SYSTEM32\USERENV.dll
+0x00007ffdaf6b0000 - 0x00007ffdaf6d7000 	F:\Virusi\Adobe Animate 2023\aifm.dll
+0x00007ffdd7140000 - 0x00007ffdd7158000 	F:\Virusi\Adobe Animate 2023\uxtech.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;F:\Virusi\Adobe Animate 2023;C:\WINDOWS\SYSTEM32;C:\Program Files\Bitdefender\Bitdefender Security\bdhkm\dlls_266184808945032704;C:\Program Files\Bitdefender\Bitdefender Security\atcuf\dlls_266670751544461168;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;C:\WINDOWS\WinSxS\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.2251_none_91a40448cc8846c1;C:\WINDOWS\system32\wbem;C:\Program Files\Bitdefender\Bitdefender Security\bdamsi\266670751455500427;F:\Virusi\Adobe Animate 2023\Common\Configuration\External Libraries;F:\Virusi\Adobe Animate 2023\Common\Configuration;C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispig.inf_amd64_19f3764f95906f94;C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispig.inf_amd64_19f3764f95906f94\Display.NvContainer;F:\Virusi\Adobe Animate 2023\jre\bin\server;F:\Virusi\Adobe Animate 2023\jre\bin
+
+VM Arguments:
+jvm_args: -Djava.library.path=F:\Virusi\Adobe Animate 2023\jre\bin -Djava.Home=F:\Virusi\Adobe Animate 2023\jre -Xbootclasspath/a: -DformatMsgNoLookups=true -Djava.awt.headless=true -Xmx256m 
+java_command: <unknown>
+java_class_path (initial): F:\Virusi\Adobe Animate 2023\Common\Configuration\ActionScript 3.0\bin\;F:\Virusi\Adobe Animate 2023\Common\Configuration\ActionScript 3.0\bin\asc_authoring.jar;F:\Virusi\Adobe Animate 2023\Common\Configuration\ActionScript 3.0\bin\fdb_authoring.jar;F:\Virusi\Adobe Animate 2023\Common\Configuration\CodeModel\commands.jar;F:\Virusi\Adobe Animate 2023\Common\Configuration\CodeModel\org.apache.felix.framework-1.8.1.jar;F:\Virusi\Adobe Animate 2023\Common\Configuration\CodeModel\codemodel_host.jar
+Launcher Type: generic
+
+[Global flags]
+     intx CICompilerCount                          = 12                                        {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 13                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 268435456                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 268435456                                 {product} {command line}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 7594288                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122031976                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122031976                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=F:\Virusi\Adobe Animate 2023\jre
+PATH=F:\Virusi\Adobe Animate 2023\jre\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\libnvvp;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.1.1\;C:\Program Files (x86)\HP\IdrsOCR_15.2.10.1114\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\PATH_Programs;C:\Program Files\dotnet\;C:\Program Files\Calibre2\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\HaxeToolkit\haxe;C:\HaxeToolkit\neko;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Git\cmd;C:\Users\Home\AppData\Local\Microsoft\WindowsApps;C:\ffmpeg;E:\Microsoft VS Code\bin;C:\Users\Home\AppData\Local\GitHubDesktop\bin
+USERNAME=Home
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.3155)
+
+CPU:total 16 (initial active 16) (16 cores per cpu, 2 threads per core) family 23 model 113 stepping 0 microcode 0x0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, ht, tsc, tscinvbit, tscinv, bmi1, bmi2, adx,
+
+Memory: 4k page, system-wide physical 32679M (14786M free)
+TotalPageFile size 34677M (AvailPageFile size 140M)
+current process WorkingSet (physical memory assigned to process): 615M, peak: 615M
+current process commit charge ("private bytes"): 732M, peak: 988M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (11.0.15.1+2-LTS-10) for windows-amd64 JRE (11.0.15.1+2-LTS-10), built on Apr 25 2022 21:51:57 by "mach5one" with MS VC++ 15.9 (VS2017)
+
+END.

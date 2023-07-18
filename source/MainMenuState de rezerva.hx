@@ -48,7 +48,6 @@ class MainMenuState extends MusicBeatState
 	var debugKeys:Array<FlxKey>;
 	var menuItem(default, null):
 	var menuItem(default, null):?;
-
 	var menuItem(default, null):?;
 
 	var i(default, null):?;

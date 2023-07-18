@@ -39,8 +39,8 @@ class MainMenuState extends MusicBeatState
 		//#if MODS_ALLOWED 'mods', #end 
 		//#if ACHIEVEMENTS_ALLOWED 'awards', #end 
 		//'credits', // 5
-		#if !switch 'donate', #end // 4
-		'options' // 2
+		#if !switch 'donate', #end // 2
+		'options' // 3
 	];
 
 	var magenta:FlxSprite;
@@ -128,27 +128,21 @@ class MainMenuState extends MusicBeatState
 			//menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
 			menuItem.updateHitbox();
 			switch (i)
-			{
+				{
 					case 0: 
-						menuItem.y = 10;
-						menuItem.x = 200;
+						menuItem.y = 34.95;
+						menuItem.x = 659.4;
 
 					case 1: 
-						menuItem.y = 50;
-						menuItem.x = 400;
+						menuItem.y = 193.75;
+						menuItem.x = 629.8;
 
 					case 2:
-						menuItem.y = 90;
-						menuItem.x = 520;
+						menuItem.y = 393;
+						menuItem.x = 576.5;
 					case 3:
-						menuItem.y = 130;
-						menuItem.x = 650;
-					case 4:
-						menuItem.y = 170;
-						menuItem.x = 700;
-					case 5:
-						menuItem.y = 220;
-						menuItem.y = 850;
+						menuItem.y = 712.9;
+						menuItem.x = 494.75;
 			}
 			if(FlxG.save.data.antialiasing)
 				{
