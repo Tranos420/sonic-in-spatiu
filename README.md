@@ -1,13 +1,65 @@
-# Sonic in Spatiu 
-Sonic in Spatiu este un joc de acuratete pe muzica
-Caracterul principal se intalneste intr-un mod misterios cu personajul iconic, Sonic ariciul, in spatiu! Acestia decid sa inceapa o batalie rap, dar un virus intunecat a preluat controlul asupra lui Sonic, facand o situatie intergalactica in spatiu. Oare Sonic va fi salvat?
-Jocul poate ajuta la cresterea acuratetei si a timpului de reactie. Pentru un copil poate fi foarte important sa aibe un timp de reactie cat mai dezvoltat.
+# Sonic in Spatiu: 
+Sonic in Spatiu este un joc de acuratete ce are scopul utilitar de a creste timpul de reactie. Pentru un copil, timpul de reactie este in stransa legatura cu dezvoltarea mintala a acestuia.
+Site-ul jocului: sonicinspace.eu
+Trailer: 
+# Instructiuni:
+Jocul se prezinta foarte simplu, dar in spate exista o complexitate foarte mare.
+Extrageti din #release ultima versiune a jocului si deschideti PsychEngine.exe.
+Veti observa un meniu cu 4 butoane. Apasati pe ***Story Mode*** si de acolo selectati primul joc, apasand Enter. Recomand pentru incepatori sa joace pe dificultatea **Easy** 
+Veti observa un cutscene cu un tutorial. Controalele sunt WASD/Arrow Keys, dar pot fi schimbate din butonul ***Optiuni***
+Jocul a inceput, have fun!
+\\ *** Pentru celelalte butoane *** \\
+La al doilea buton, ***Freeplay*** Puteti selecta ce melodie doriti, fara cutscene/dialog.
+Al treilea buton ***Donati***, va redirectioneaza catre o pagina de donatii.
+Al patrulea buton ***Optiuni*** va puteti schimba controalele, sa modificati grafica, fps-urile, culorile de pe sageti, etc.
+# Documentatia propriu zisa:
+Sonic in spatiu a fost facut in framework-ul Haxe, impreuna cu engine-ul PsychEngine.
+Haxe este un limbaj de programare și un compilator multiplatforme de nivel înalt care poate produce aplicații și source code, pentru multe platforme de calcul diferite dintr-un code-base.
+***FL Studio 20*** este un program de editare muzicala, foarte complex. In acest program toate melodiile sunt compuse de mine. Fiecare melodie vine cu un instrumental si vocals. Acestea vor fi randate in doua fisiere audio de tip .ogg care se pun separat in joc. La instrumental, am folosit plugin-urile: Genny, Genesis. Se pot face atat melodii moderne, cat si melodii pixelate. Pe parte de Voice o sa auziti vocea caracterelor. De exemplu caracterul Sonic.exe pixelat din melodia Fun-In-Space a fost facut cu vocea mea, inregistrand aceste 5 sunete: Aiii, Eeeee, Eeiii, Eoooouu, Ouuu. Din aceste 5 sunete am facut 45, diferenta dintre ele fiind frecventa, le-am adaugat in piano roll, apoi am scazut pitch-ul la 12 si am adaugat efectele: Chorus, Soundgoodizer, FX, Reeverb, Delay. Restul caracterelor functioneaza si ele pe acelasi principiu.
 
-Tehnologia jocului poate ajuta la cresterea acuratetei si a timpului de reactie. Pentru un copil poate fi foarte important sa aibe un timp de reactie cat mai dezvoltat.
-Jocul a fost facut cu ajutorul framework-ului HaxeFlixel prin limbajul de programare Haxe pe Engine-ul Psych Engine, care este Open-Source
-Melodiile au fost compuse in programul FL Studio 20 in totalitate de mine
-Animatiile au fost facute in Adobe Animate 2023 si Adobe Photoshop
-Pentru editarea videoclipurilor/cutscenes am folosit Vegas Pro 18
-Pentru completarea proiectului am folosit pasiunea si efortul, timp de lucru 4 luni.
+***Adobe Animate*** este un program de editare vizuala. M-a ajutat sa creez animatiile personajelor. De exemplu caracterul Sonic.exe a fost desenat de mine in ***Photoshop*** pentru fiecare miscare in parte: Idle, Right pose, Left pose, Down pose, Up pose. Pentru fiecare pose, am separat desenul intreg pe bucati, maini, cap, corp. Le-am separat deoarece in ***Adobe Animate*** fiecare parte are cate o frecventa diferita. Pe acest caracter, s-au facut 11 cadre pentru fiecare pose in parte. Pentru a nu desena de 11 ori caracterul de la 0, desenul original a fost deformat pentru fiecare cadru in parte cu o intensitate de loop, astfel incat sa se individualizeze un sprite sheet smooth. Restul caracterelor functioneaza si ele pe acelasi principiu.
+
+***HaxeFlixel*** In acest framework am facut UI-ul jocului, unde am folosit diferite efecte. De exemplu pe meniul principal, unde se regasesc cele patru butoane, am facut o animatie si am adaugat coordonate x,y in fisierul MainMenuState.hx 
+    menuItem.updateHitbox();
+			switch (i)
+				{
+					case 0: 
+						menuItem.y = 34.95;
+						menuItem.x = 659.4;
+
+					case 1: 
+						menuItem.y = 193.75;
+						menuItem.x = 629.8;
+
+					case 2:
+						menuItem.y = 393;
+						menuItem.x = 576.5;
+					case 3:
+						menuItem.y = 712.9;
+						menuItem.x = 494.75;
+			}
+			if(FlxG.save.data.antialiasing)
+				{
+				 menuItem.antialiasing = true;
+				}
+			   if (firstStart)
+				FlxTween.tween(menuItem,{y: 60 + (i * 160)},1 + (i * 0.25) ,{ease: FlxEase.expoInOut, onComplete: function(flxTween:FlxTween) 
+				 { 
+				  
+				  changeItem();
+				 }});
+			   else
+				menuItem.y = 60 + (i * 160);
+Totodata in acest framework se afla baza jocului in sine. Acest joc de acuratete, fiind compus din 4 sageti, are ca si scop sa interactioneze cu un anumit caracter, ce urmeaza directia unei sageti. Daca sageata este cu directia spre Nord, caracterul va activita animatia Up pose.
+Am folosit pentru fiecare melodie niste evenimente, ce se adauga in PsychEngine si se randeaza cu un fisier de timp: events.json, ce functioneaza pe baza unui scrip. De exemplu sa zicem ca vrem sa adaugam un efect de flash. Am facut fisierul ***Flash camera.lua*** ce contine aceste informatii principale:
+if n == 'Flash Camera' then
+
+	   makeLuaSprite('flash', '', 0, 0);
+        makeGraphic('flash',1280,720,'ffffff')
+	      addLuaSprite('flash', true);
+          setLuaSpriteScrollFactor('flash',0,0)
+	      setProperty('flash.scale.x',2)
+	      setProperty('flash.scale.y',2)
 
 
+***PsychEngine*** este un engine special pentru jocurile de acuratete, care este Open-Source si urmareste modelul FNF. Acest engine practic m-a ajutat sa pun mult mai usor sagetile din joc, ce vine cu o gama variata de optiuni complexe. Am facut in acest engine chart-ul din jocul meu, adica am asezat sagetile individual, astfel incat sa pice pe ritm cum trebuie. Pe fiecare melodie am facut 3 chart-uri pentru fiecare dificultate. Pe parte de cod, informatiile se salveaza aici pentru fiecare melodie: bin\mods\data  
