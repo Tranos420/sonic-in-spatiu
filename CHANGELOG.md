@@ -1,6 +1,9 @@
 # Changelog
 All notable changes will be documented in this file.
 
+
+
+
 ### Sonic in Space [1.3] Modificarea meniului
    - Modificarea meniului din fisierul Sonic in spatiu 1.3\source\MainMenuState, practic modificarea directiei a butoanelor
    - am scris in cod aceste lucruri, ce reprezinta coordonatele butoanelor, doar cele 3 momentan, restul sunt in mentenanta, dar vor fi adaugate in urmatoarele versiuni, respectiv Donate si Credits 			

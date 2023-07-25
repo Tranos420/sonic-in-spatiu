@@ -1,18 +1,22 @@
 # Sonic in Spatiu: 
 Sonic in Spatiu este un joc de acuratete ce are scopul utilitar de a creste timpul de reactie. Pentru un copil, timpul de reactie este in stransa legatura cu dezvoltarea mintala a acestuia.
-Site-ul jocului: sonicinspace.eu
-Trailer: 
+Site-ul jocului: https://www.sonicinspace.eu/
+Trailer: https://www.youtube.com/watch?v=_kI8zGOssqQ
 # Instructiuni:
 Jocul se prezinta foarte simplu, dar in spate exista o complexitate foarte mare.
 Extrageti din #release ultima versiune a jocului si deschideti PsychEngine.exe.
 Veti observa un meniu cu 4 butoane. Apasati pe ***Story Mode*** si de acolo selectati primul joc, apasand Enter. Recomand pentru incepatori sa joace pe dificultatea **Easy** 
 Veti observa un cutscene cu un tutorial. Controalele sunt WASD/Arrow Keys, dar pot fi schimbate din butonul ***Optiuni***
 Jocul a inceput, have fun!
-*** Pentru celelalte butoane ***
+
+# Pentru celelalte butoane
+
 La al doilea buton, ***Freeplay*** Puteti selecta ce melodie doriti, fara cutscene/dialog.
 Al treilea buton ***Donati***, va redirectioneaza catre o pagina de donatii.
 Al patrulea buton ***Optiuni*** va puteti schimba controalele, sa modificati grafica, fps-urile, culorile de pe sageti, etc.
+
 # Documentatia propriu zisa:
+
 Sonic in spatiu a fost facut in framework-ul Haxe, impreuna cu engine-ul PsychEngine.
 Haxe este un limbaj de programare și un compilator multiplatforme de nivel înalt care poate produce aplicații și source code, pentru multe platforme de calcul diferite dintr-un code-base.
 
