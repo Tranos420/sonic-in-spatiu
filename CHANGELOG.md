@@ -1,7 +1,7 @@
 # Changelog
 All notable changes will be documented in this file.
-
-
+### Sonic in Space [1.7] Modificarea meniului
+De-a lungul versiunilor s-au adaugat mai multe texturi, s-a modificat UI-ul, s-au melodii, s-au reparat bugguri
 
 
 ### Sonic in Space [1.3] Modificarea meniului
