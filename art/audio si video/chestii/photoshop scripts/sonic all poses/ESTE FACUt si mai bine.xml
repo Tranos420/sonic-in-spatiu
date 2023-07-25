@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ESTE FACUt si mai bine.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idle0000" x="0" y="0" width="723" height="884" frameX="-38" frameY="-26" frameWidth="779" frameHeight="987"/>
+	<SubTexture name="idle0001" x="723" y="0" width="747" height="928" frameX="-22" frameY="-15" frameWidth="779" frameHeight="987"/>
+	<SubTexture name="idle0002" x="1470" y="0" width="763" height="956" frameX="-11" frameY="-8" frameWidth="779" frameHeight="987"/>
+	<SubTexture name="idle0003" x="2233" y="0" width="773" height="975" frameX="-4" frameY="-3" frameWidth="779" frameHeight="987"/>
+	<SubTexture name="idle0004" x="3006" y="0" width="777" height="983" frameX="-1" frameY="-1" frameWidth="779" frameHeight="987"/>
+	<SubTexture name="idle0005" x="0" y="983" width="779" height="987"/>
+	<SubTexture name="idle0006" x="779" y="983" width="779" height="987"/>
+	<SubTexture name="idle0007" x="723" y="0" width="747" height="928" frameX="-22" frameY="-15" frameWidth="779" frameHeight="987"/>
+	<SubTexture name="idle0008" x="1558" y="983" width="730" height="897" frameX="-34" frameY="-23" frameWidth="779" frameHeight="987"/>
+	<SubTexture name="idle0009" x="2288" y="983" width="724" height="886" frameX="-38" frameY="-26" frameWidth="779" frameHeight="987"/>
+	<SubTexture name="idle0010" x="0" y="0" width="723" height="884" frameX="-38" frameY="-26" frameWidth="779" frameHeight="987"/>
+</TextureAtlas>

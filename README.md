@@ -81,3 +81,12 @@ Sega Sonic Team: Yuji Naka, Naoto Ohshima, Hirokazu Yasuhara
 Psych Engine Team: shadowmario, river, shubs
 FNF crew: ninjamuffin99, phantomarcade, evilsk8r, kawaisprite
 Vs Sonic.exe Team: SasterCommandoDev, MarStarBro (Formerly), averyavary (Formerly), Revie (Formerly), RightBurst_Ultra (Formerly)  
+# Analiza pieței
+Sonic In spatiu, este un joc de ritmica, asemanator cu Osu-mania, pe modelul FNF.
+Imbunatatiri, reprezinta faptul ca in Osu, ca si parte de UI, poate fi plictisitor pentru unii jucatori. Sonic in Spatiu, contine in plus anumite personaje si o poveste. Jocul Osu-Mania este bazat doar pe sageti, in timp ce Sonic In Spatiu contine Sprite Sheet-uri. Pe langa acest lucru se individualizeaza si categoria Events, de unde am adaugat efectele de Flash si de Cinematics atunci cand se intampla ceva important in joc, in Osu mania, Fnf, nu exista acesta optiune.
+#  Planificarea dezvoltarii
+Am planificat sa folosesc limbajul de programare Haxe, deoarece este foarte prietenos cu developerul. Atunci cand fac o greseala in cod si dau compile din CMD se individualizeaza automat greseala si iti spune ce sa modifici. Din punctul meu de vedere este limbajul perfect de programare pentru a face jocuri de ritmica. Aici m-am ocupat de UI, de punerea sagetilor. Apoi am folosit Adobe Animate pentru a face animatiile de pe caractere, adica sprite sheed-urile, iar in FL Studio 20, am compus melodiile. Jocul este optimizat si nu consuma foarte mult RAM si CPU.
+# Maturitatea aplicație
+Aplicatia este pregatita 100% si deja este lansata pentru public.
+Dar contine si versiunile vechi, unde au fost anumite bug-uri care in versiunea finala nu mai exista.
+

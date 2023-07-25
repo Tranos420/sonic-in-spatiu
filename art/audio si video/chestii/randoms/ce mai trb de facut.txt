@@ -1,0 +1,13 @@
+Sa faci fisierul in care explici care e treaba cu proiectul tau adica read me, ai grija sa nu incurci cu read-me-ul de la psy engine/ ninjamuffin99 sau 66 idk am uitat
+La sonic.exe sa modific mana cu poza de pe Desktop
+De adaugat dialog
+De terminat meniul, nu uita ca ai de pus donatiile si sa pui acolo Sonic in Space
+De modificat textura la sageti
+De facut in Adobe animator caracterul Sonic.exe si Sonic Normal
+De modificat sunetele basic din joc
+De modificat UI-ul in timpul bataliei
+de adauga melodia cu sonic.exe pixelat care fugareste ori pe sonic ori pe boyfriend, dar cred ca pe sonic normal
+De agaugat dificultati, easy medium hard
+De reparat melodia closeminde, de preferat sa refact chart-ul de la 0
+De modificat voices daca e nu e sigur
+De adaugat cutscenes si trailer 
