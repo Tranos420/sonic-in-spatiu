@@ -61,7 +61,6 @@ Totodata in acest framework se afla baza jocului in sine. Acest joc de acuratete
 Am folosit pentru fiecare melodie niste evenimente, ce se adauga in PsychEngine si se randeaza cu un fisier de timp: events.json, ce functioneaza pe baza unui scrip. De exemplu sa zicem ca vrem sa adaugam un efect de flash. Am facut fisierul ***Flash camera.lua*** ce contine informatii principale despre activarea unei functii flash:
     { 
         if n == 'Flash Camera' then
-
 	   makeLuaSprite('flash', '', 0, 0);
         makeGraphic('flash',1280,720,'ffffff')
 	      addLuaSprite('flash', true);
