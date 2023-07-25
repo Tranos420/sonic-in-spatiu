@@ -8,7 +8,7 @@ Extrageti din #release ultima versiune a jocului si deschideti PsychEngine.exe.
 Veti observa un meniu cu 4 butoane. Apasati pe ***Story Mode*** si de acolo selectati primul joc, apasand Enter. Recomand pentru incepatori sa joace pe dificultatea **Easy** 
 Veti observa un cutscene cu un tutorial. Controalele sunt WASD/Arrow Keys, dar pot fi schimbate din butonul ***Optiuni***
 Jocul a inceput, have fun!
-\\ *** Pentru celelalte butoane *** \\
+*** Pentru celelalte butoane ***
 La al doilea buton, ***Freeplay*** Puteti selecta ce melodie doriti, fara cutscene/dialog.
 Al treilea buton ***Donati***, va redirectioneaza catre o pagina de donatii.
 Al patrulea buton ***Optiuni*** va puteti schimba controalele, sa modificati grafica, fps-urile, culorile de pe sageti, etc.
@@ -19,8 +19,8 @@ Haxe este un limbaj de programare și un compilator multiplatforme de nivel îna
 
 ***Adobe Animate*** este un program de editare vizuala. M-a ajutat sa creez animatiile personajelor. De exemplu caracterul Sonic.exe a fost desenat de mine in ***Photoshop*** pentru fiecare miscare in parte: Idle, Right pose, Left pose, Down pose, Up pose. Pentru fiecare pose, am separat desenul intreg pe bucati, maini, cap, corp. Le-am separat deoarece in ***Adobe Animate*** fiecare parte are cate o frecventa diferita. Pe acest caracter, s-au facut 11 cadre pentru fiecare pose in parte. Pentru a nu desena de 11 ori caracterul de la 0, desenul original a fost deformat pentru fiecare cadru in parte cu o intensitate de loop, astfel incat sa se individualizeze un sprite sheet smooth. Restul caracterelor functioneaza si ele pe acelasi principiu.
 
-***HaxeFlixel*** In acest framework am facut UI-ul jocului, unde am folosit diferite efecte. De exemplu pe meniul principal, unde se regasesc cele patru butoane, am facut o animatie si am adaugat coordonate x,y in fisierul MainMenuState.hx 
-    menuItem.updateHitbox();
+***HaxeFlixel*** In acest framework am facut UI-ul jocului, unde am folosit diferite efecte. De exemplu pe meniul principal, unde se regasesc cele patru butoane, am facut o animatie si am adaugat coordonate x,y in fisierul MainMenuState.hx din source
+    { menuItem.updateHitbox();
 			switch (i)
 				{
 					case 0: 
@@ -50,9 +50,10 @@ Haxe este un limbaj de programare și un compilator multiplatforme de nivel îna
 				 }});
 			   else
 				menuItem.y = 60 + (i * 160);
+    }
 Totodata in acest framework se afla baza jocului in sine. Acest joc de acuratete, fiind compus din 4 sageti, are ca si scop sa interactioneze cu un anumit caracter, ce urmeaza directia unei sageti. Daca sageata este cu directia spre Nord, caracterul va activita animatia Up pose.
 Am folosit pentru fiecare melodie niste evenimente, ce se adauga in PsychEngine si se randeaza cu un fisier de timp: events.json, ce functioneaza pe baza unui scrip. De exemplu sa zicem ca vrem sa adaugam un efect de flash. Am facut fisierul ***Flash camera.lua*** ce contine aceste informatii principale:
-if n == 'Flash Camera' then
+    { if n == 'Flash Camera' then
 
 	   makeLuaSprite('flash', '', 0, 0);
         makeGraphic('flash',1280,720,'ffffff')
@@ -60,6 +61,6 @@ if n == 'Flash Camera' then
           setLuaSpriteScrollFactor('flash',0,0)
 	      setProperty('flash.scale.x',2)
 	      setProperty('flash.scale.y',2)
-
+    }
 
 ***PsychEngine*** este un engine special pentru jocurile de acuratete, care este Open-Source si urmareste modelul FNF. Acest engine practic m-a ajutat sa pun mult mai usor sagetile din joc, ce vine cu o gama variata de optiuni complexe. Am facut in acest engine chart-ul din jocul meu, adica am asezat sagetile individual, astfel incat sa pice pe ritm cum trebuie. Pe fiecare melodie am facut 3 chart-uri pentru fiecare dificultate. Pe parte de cod, informatiile se salveaza aici pentru fiecare melodie: bin\mods\data  
