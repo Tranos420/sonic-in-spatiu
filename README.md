@@ -63,6 +63,7 @@ Este un program de editare vizuala. M-a ajutat sa creez animatiile personajelor.
 
 Totodata in acest framework se afla baza jocului in sine. Acest joc de acuratete, fiind compus din 4 sageti, are ca si scop sa interactioneze cu un anumit caracter, ce urmeaza directia unei sageti. Daca sageata este cu directia spre Nord, caracterul va activita animatia Up pose.
 Am folosit pentru fiecare melodie niste evenimente, ce se adauga in PsychEngine si se randeaza cu un fisier de timp: events.json, ce functioneaza pe baza unui scrip. De exemplu sa zicem ca vrem sa adaugam un efect de flash. Am facut fisierul ***Flash camera.lua*** ce contine informatii principale despre activarea unei functii flash:
+
     { 
         if n == 'Flash Camera' then
 	   makeLuaSprite('flash', '', 0, 0);
@@ -71,7 +72,8 @@ Am folosit pentru fiecare melodie niste evenimente, ce se adauga in PsychEngine 
           setLuaSpriteScrollFactor('flash',0,0)
 	      setProperty('flash.scale.x',2)
 	      setProperty('flash.scale.y',2)
-    }    
+    
+     }    
 La fel si pentru creerea unui stage, se aplica setari asemanatoare
 
 # PsychEngine
@@ -86,7 +88,7 @@ Sonic In spatiu, este un joc de ritmica, asemanator cu Osu-mania, pe modelul FNF
 Imbunatatiri, reprezinta faptul ca in Osu, ca si parte de UI, poate fi plictisitor pentru unii jucatori. Sonic in Spatiu, contine in plus anumite personaje si o poveste. Jocul Osu-Mania este bazat doar pe sageti, in timp ce Sonic In Spatiu contine Sprite Sheet-uri. Pe langa acest lucru se individualizeaza si categoria Events, de unde am adaugat efectele de Flash si de Cinematics atunci cand se intampla ceva important in joc, in Osu mania, Fnf, nu exista acesta optiune.
 #  Planificarea dezvoltarii
 Am planificat sa folosesc limbajul de programare Haxe, deoarece este foarte prietenos cu developerul. Atunci cand fac o greseala in cod si dau compile din CMD se individualizeaza automat greseala si iti spune ce sa modifici. Din punctul meu de vedere este limbajul perfect de programare pentru a face jocuri de ritmica. Aici m-am ocupat de UI, de punerea sagetilor. Apoi am folosit Adobe Animate pentru a face animatiile de pe caractere, adica sprite sheed-urile, iar in FL Studio 20, am compus melodiile. Jocul este optimizat si nu consuma foarte mult RAM si CPU.
-# Maturitatea aplicație
+# Maturitatea aplicației
 Aplicatia este pregatita 100% si deja este lansata pentru public.
 Dar contine si versiunile vechi, unde au fost anumite bug-uri care in versiunea finala nu mai exista.
 
